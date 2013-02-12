@@ -1,6 +1,4 @@
 trap "kill 0 && exit" SIGINT SIGTERM EXIT
-pkgin in sun-jdk6
-pkgin in unzip
 unzip rexster-server-2.3.0-SNAPSHOT-distribution.zip
 unzip titan-0.2.0.zip 
 mkdir rexster-server-2.3.0-SNAPSHOT/ext/titan
