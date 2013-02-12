@@ -12,4 +12,13 @@ Bootstrap environment:
 * run `./install_deps.sh`
 
 Run the test:
-* From the top level of the repository hit `./run.sh`
+* From the top level of the repository execute `./run.sh`
+
+The `run.sh` script will 
+* Unzip the included distfiles for rexster and titan
+* Copy the appropriate dependencies out of titan into rexster
+* Instantiate a berkleydb backed titan database with the graph of the gods data
+* Startup a rexster server
+* Loop requests onto rexster with curl
+
+The curl loop will eventually hang when all this is run on smartos. This behavior is not consistent with what happens when I run this same stuff on OSX.
